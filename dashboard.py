@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import openai
 
-openai.api_key = "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"  # supply your API key however you choose
+openai.api_key = "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"  # supply your API key however you choose
 
 frame_shape = ['cat eye','oversized','pilot','round','square','circular','oval']
 lenses = ['gradient','mirrored','tinted']
