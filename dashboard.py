@@ -3,6 +3,9 @@ import pandas as pd
 import openai
 import os
 
+import os
+os.system("python setup.py install")
+
 os.environ["OPENAI_API_KEY"] = "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" 
 
 openai.api_key = "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"
