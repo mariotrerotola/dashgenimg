@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import openai
-from streamlit_image_comparison import image_comparison
 
 openai.api_key = "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"  # supply your API key however you choose
 
