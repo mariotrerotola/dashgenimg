@@ -3,9 +3,9 @@ import pandas as pd
 import openai
 import os
 
-os.environ["OPENAI_API_KEY"] = "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" 
+os.environ["OPENAI_API_KEY"] = "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" 
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 frame_shape = ['cat eye','oversized','pilot','round','square','circular','oval']
 lenses = ['gradient','mirrored','tinted']
