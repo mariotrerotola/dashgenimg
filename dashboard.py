@@ -42,24 +42,17 @@ color = st.sidebar.selectbox(
 query = color + " sunglasses " + " " + shape + " " + lenses + " " + gender + " "
 
 def gen_img(query):
-    image_resp = openai.Image.create(prompt=query, n=9, size="1024x1024")
+    image_resp = openai.Image.create(prompt=query, n=4, size="1024x1024")
     img_urls = [d['url'] for d in image_resp['data']]
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.image(img_urls[0])
         st.image(img_urls[1])
-        st.image(img_urls[2])
 
     with col2:
+        st.image(img_urls[2])
         st.image(img_urls[3])
-        st.image(img_urls[4])
-        st.image(img_urls[5])
-
-    with col3:
-        st.image(img_urls[6])
-        st.image(img_urls[7])
-        st.image(img_urls[8])
 
 
 
